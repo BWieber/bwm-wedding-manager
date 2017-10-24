@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('lodgings');
+  this.route('table-manager');
 });
 
 export default Router;
