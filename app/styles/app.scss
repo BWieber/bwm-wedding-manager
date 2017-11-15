@@ -72,7 +72,16 @@ body {
   background-color: #CD661D;
   margin-top: 75px;
   margin-bottom: 75px;
+  position: relative;
 }
+
+.picnic-circle-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .l-set {
   margin-left: 300px;
