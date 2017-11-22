@@ -15,6 +15,9 @@
     {{content-for "head-footer"}}
   </head>
   <body>
+    <pre id="object"> </pre>
+
+
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
@@ -32,6 +35,17 @@
       messagingSenderId: "74358283381"
     };
     firebase.initializeApp(config);
+
+    const preObject = document.getElementById('object');
+
+    // Create reference
+
+    const dbRefObject = firebase.database().ref().child('guests');
+
+    // Sync preObject
+    // dbRefObject.on('value', snap => {
+    //   preObject.innerText = JSON.stringify(snap.val(), null, 3);
+    // })
 
     var database = firebase.database();
     </script>
